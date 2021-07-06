@@ -3402,6 +3402,7 @@ static struct platform_driver gcc_shima_driver = {
 		.name = "gcc-shima",
 		.of_match_table = gcc_shima_match_table,
 		.sync_state = gcc_shima_sync_state,
+		.probe_type = PROBE_FORCE_SYNCHRONOUS,
 	},
 };
 
